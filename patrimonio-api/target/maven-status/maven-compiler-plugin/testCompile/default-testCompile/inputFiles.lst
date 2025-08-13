@@ -1,0 +1,8 @@
+/home/jairo/git/patrimonio/patrimonio-api/src/test/java/com/manus/patrimonio/PatrimonioApiApplicationTests.java
+/home/jairo/git/patrimonio/patrimonio-api/src/test/java/com/manus/patrimonio/enums/CondicaoBemTest.java
+/home/jairo/git/patrimonio/patrimonio-api/src/test/java/com/manus/patrimonio/enums/StatusBemTest.java
+/home/jairo/git/patrimonio/patrimonio-api/src/test/java/com/manus/patrimonio/exception/RecursoNaoEncontradoExceptionTest.java
+/home/jairo/git/patrimonio/patrimonio-api/src/test/java/com/manus/patrimonio/exception/RegraDeNegocioExceptionTest.java
+/home/jairo/git/patrimonio/patrimonio-api/src/test/java/com/manus/patrimonio/model/BemTest.java
+/home/jairo/git/patrimonio/patrimonio-api/src/test/java/com/manus/patrimonio/model/EntidadeBaseTest.java
+/home/jairo/git/patrimonio/patrimonio-api/src/test/java/com/manus/patrimonio/service/BemServiceTest.java
