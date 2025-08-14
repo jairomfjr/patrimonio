@@ -142,6 +142,8 @@ springdoc:
     operations-sorter: method
     tags-sorter: alpha
     enabled: true
+    config-url: /api-docs/swagger-config
+    url: /api-docs
   default-produces-media-type: application/json
   default-consumes-media-type: application/json
 

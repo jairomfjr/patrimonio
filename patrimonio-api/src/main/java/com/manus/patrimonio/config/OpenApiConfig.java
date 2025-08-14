@@ -30,10 +30,10 @@ public class OpenApiConfig {
                                 .url("https://opensource.org/licenses/MIT")))
                 .servers(List.of(
                         new Server()
-                                .url("http://localhost:8080/api/v1")
+                                .url("http://localhost:8080")
                                 .description("Servidor de Desenvolvimento"),
                         new Server()
-                                .url("https://patrimonio.manus.ai/api/v1")
+                                .url("https://patrimonio.manus.ai")
                                 .description("Servidor de Produção")
                 ));
     }

@@ -30,11 +30,16 @@ public class SecurityConfig {
             .exceptionHandling(exception -> exception.authenticationEntryPoint(unauthorizedHandler))
             .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
             .authorizeHttpRequests(authz -> authz
-                // Endpoints públicos
+                // Endpoints públicos - Swagger e documentação
                 .requestMatchers("/h2-console/**").permitAll()
                 .requestMatchers("/swagger-ui/**", "/swagger-ui.html").permitAll()
                 .requestMatchers("/api-docs/**", "/v3/api-docs/**").permitAll()
+                .requestMatchers("/swagger-resources/**", "/webjars/**").permitAll()
+                
+                // Actuator endpoints
                 .requestMatchers("/actuator/health", "/actuator/info").permitAll()
+                
+                // Endpoints de autenticação
                 .requestMatchers("/api/v1/auth/**").permitAll()
                 .requestMatchers("/test/**").permitAll()
                 
