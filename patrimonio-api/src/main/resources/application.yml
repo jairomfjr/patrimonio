@@ -143,6 +143,7 @@ springdoc:
     path: /swagger-ui.html
     operations-sorter: method
     tags-sorter: alpha
+    enabled: true
   default-produces-media-type: application/json
   default-consumes-media-type: application/json
 

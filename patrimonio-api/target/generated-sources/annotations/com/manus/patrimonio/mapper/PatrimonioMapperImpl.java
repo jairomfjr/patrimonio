@@ -31,8 +31,8 @@ import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2025-08-14T10:00:29-0300",
-    comments = "version: 1.5.5.Final, compiler: Eclipse JDT (IDE) 3.42.50.v20250729-0351, environment: Java 21.0.8 (Eclipse Adoptium)"
+    date = "2025-08-14T10:08:25-0300",
+    comments = "version: 1.5.5.Final, compiler: javac, environment: Java 23.0.2 (Azul Systems, Inc.)"
 )
 @Component
 public class PatrimonioMapperImpl implements PatrimonioMapper {
