@@ -2,8 +2,11 @@
 /home/jairo/git/patrimonio/patrimonio-api/src/main/java/com/manus/patrimonio/config/CorsConfig.java
 /home/jairo/git/patrimonio/patrimonio-api/src/main/java/com/manus/patrimonio/config/DadosIniciais.java
 /home/jairo/git/patrimonio/patrimonio-api/src/main/java/com/manus/patrimonio/config/OpenApiConfig.java
+/home/jairo/git/patrimonio/patrimonio-api/src/main/java/com/manus/patrimonio/config/PasswordConfig.java
 /home/jairo/git/patrimonio/patrimonio-api/src/main/java/com/manus/patrimonio/config/SecurityConfig.java
 /home/jairo/git/patrimonio/patrimonio-api/src/main/java/com/manus/patrimonio/controller/AuditoriaController.java
+/home/jairo/git/patrimonio/patrimonio-api/src/main/java/com/manus/patrimonio/controller/AuthController.java
+/home/jairo/git/patrimonio/patrimonio-api/src/main/java/com/manus/patrimonio/controller/AuthenticationController.java
 /home/jairo/git/patrimonio/patrimonio-api/src/main/java/com/manus/patrimonio/controller/BaixaController.java
 /home/jairo/git/patrimonio/patrimonio-api/src/main/java/com/manus/patrimonio/controller/BemController.java
 /home/jairo/git/patrimonio/patrimonio-api/src/main/java/com/manus/patrimonio/controller/CategoriaController.java
@@ -14,6 +17,7 @@
 /home/jairo/git/patrimonio/patrimonio-api/src/main/java/com/manus/patrimonio/controller/MovimentacaoController.java
 /home/jairo/git/patrimonio/patrimonio-api/src/main/java/com/manus/patrimonio/controller/NotificacaoController.java
 /home/jairo/git/patrimonio/patrimonio-api/src/main/java/com/manus/patrimonio/controller/PerfilController.java
+/home/jairo/git/patrimonio/patrimonio-api/src/main/java/com/manus/patrimonio/controller/TestController.java
 /home/jairo/git/patrimonio/patrimonio-api/src/main/java/com/manus/patrimonio/controller/UsuarioController.java
 /home/jairo/git/patrimonio/patrimonio-api/src/main/java/com/manus/patrimonio/dto/AuditoriaDTO.java
 /home/jairo/git/patrimonio/patrimonio-api/src/main/java/com/manus/patrimonio/dto/BaixaDTO.java
@@ -62,7 +66,11 @@
 /home/jairo/git/patrimonio/patrimonio-api/src/main/java/com/manus/patrimonio/repository/NotificacaoRepository.java
 /home/jairo/git/patrimonio/patrimonio-api/src/main/java/com/manus/patrimonio/repository/PerfilRepository.java
 /home/jairo/git/patrimonio/patrimonio-api/src/main/java/com/manus/patrimonio/repository/UsuarioRepository.java
+/home/jairo/git/patrimonio/patrimonio-api/src/main/java/com/manus/patrimonio/security/JwtAuthenticationEntryPoint.java
+/home/jairo/git/patrimonio/patrimonio-api/src/main/java/com/manus/patrimonio/security/JwtAuthenticationFilter.java
+/home/jairo/git/patrimonio/patrimonio-api/src/main/java/com/manus/patrimonio/security/JwtTokenProvider.java
 /home/jairo/git/patrimonio/patrimonio-api/src/main/java/com/manus/patrimonio/service/AuditoriaService.java
+/home/jairo/git/patrimonio/patrimonio-api/src/main/java/com/manus/patrimonio/service/AuthenticationService.java
 /home/jairo/git/patrimonio/patrimonio-api/src/main/java/com/manus/patrimonio/service/BaixaService.java
 /home/jairo/git/patrimonio/patrimonio-api/src/main/java/com/manus/patrimonio/service/BemService.java
 /home/jairo/git/patrimonio/patrimonio-api/src/main/java/com/manus/patrimonio/service/CategoriaService.java
@@ -73,4 +81,6 @@
 /home/jairo/git/patrimonio/patrimonio-api/src/main/java/com/manus/patrimonio/service/MovimentacaoService.java
 /home/jairo/git/patrimonio/patrimonio-api/src/main/java/com/manus/patrimonio/service/NotificacaoService.java
 /home/jairo/git/patrimonio/patrimonio-api/src/main/java/com/manus/patrimonio/service/PerfilService.java
+/home/jairo/git/patrimonio/patrimonio-api/src/main/java/com/manus/patrimonio/service/UserDetailsServiceImpl.java
 /home/jairo/git/patrimonio/patrimonio-api/src/main/java/com/manus/patrimonio/service/UsuarioService.java
+/home/jairo/git/patrimonio/patrimonio-api/src/main/java/com/manus/patrimonio/util/PasswordGenerator.java

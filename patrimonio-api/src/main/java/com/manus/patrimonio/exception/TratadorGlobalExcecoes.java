@@ -83,9 +83,40 @@ public class TratadorGlobalExcecoes {
         return new ResponseEntity<>(erro, HttpStatus.BAD_REQUEST);
     }
 
+    @ExceptionHandler(RuntimeException.class)
+    public ResponseEntity<RespostaErro> tratarRuntimeException(
+            RuntimeException ex, WebRequest request) {
+        
+        RespostaErro erro = new RespostaErro(
+            HttpStatus.BAD_REQUEST.value(),
+            "Erro de execução",
+            ex.getMessage(),
+            request.getDescription(false),
+            LocalDateTime.now()
+        );
+        
+        return new ResponseEntity<>(erro, HttpStatus.BAD_REQUEST);
+    }
+
     @ExceptionHandler(Exception.class)
     public ResponseEntity<RespostaErro> tratarErroGenerico(
             Exception ex, WebRequest request) {
+        
+        // Log para debug
+        System.err.println("TratadorGlobalExcecoes capturou exceção: " + ex.getClass().getSimpleName());
+        System.err.println("Mensagem: " + ex.getMessage());
+        
+        // Se for uma exceção de runtime, tratar como erro de negócio
+        if (ex instanceof RuntimeException) {
+            return ResponseEntity.badRequest()
+                .body(new RespostaErro(
+                    HttpStatus.BAD_REQUEST.value(),
+                    "Erro de execução",
+                    ex.getMessage(),
+                    request.getDescription(false),
+                    LocalDateTime.now()
+                ));
+        }
         
         RespostaErro erro = new RespostaErro(
             HttpStatus.INTERNAL_SERVER_ERROR.value(),

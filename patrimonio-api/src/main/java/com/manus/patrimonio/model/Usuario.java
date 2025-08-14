@@ -80,7 +80,7 @@ public class Usuario extends EntidadeBase {
     @Column(name = "pais")
     private String pais = "Brasil";
 
-    @ManyToMany(fetch = FetchType.LAZY)
+    @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(
         name = "usuario_perfis",
         joinColumns = @JoinColumn(name = "usuario_id"),

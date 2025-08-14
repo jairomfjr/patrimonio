@@ -31,8 +31,8 @@ import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2025-08-14T14:51:34-0300",
-    comments = "version: 1.5.5.Final, compiler: Eclipse JDT (IDE) 3.42.50.v20250729-0351, environment: Java 21.0.8 (Eclipse Adoptium)"
+    date = "2025-08-14T16:31:43-0300",
+    comments = "version: 1.5.5.Final, compiler: javac, environment: Java 23.0.2 (Azul Systems, Inc.)"
 )
 @Component
 public class PatrimonioMapperImpl implements PatrimonioMapper {
@@ -50,25 +50,25 @@ public class PatrimonioMapperImpl implements PatrimonioMapper {
         bemDTO.setCategoriaNome( bemCategoriaNome( bem ) );
         bemDTO.setLocalizacaoAtualId( bemLocalizacaoAtualId( bem ) );
         bemDTO.setLocalizacaoAtualNome( bemLocalizacaoAtualNome( bem ) );
-        bemDTO.setAnoFabricacao( bem.getAnoFabricacao() );
-        bemDTO.setCentroCusto( bem.getCentroCusto() );
-        bemDTO.setCondicao( bem.getCondicao() );
-        bemDTO.setDataAquisicao( bem.getDataAquisicao() );
-        bemDTO.setDataProximaManutencao( bem.getDataProximaManutencao() );
-        bemDTO.setDataUltimaManutencao( bem.getDataUltimaManutencao() );
-        bemDTO.setDescricao( bem.getDescricao() );
-        bemDTO.setFabricante( bem.getFabricante() );
-        bemDTO.setFornecedor( bem.getFornecedor() );
-        bemDTO.setGarantiaAte( bem.getGarantiaAte() );
         bemDTO.setId( bem.getId() );
-        bemDTO.setModelo( bem.getModelo() );
+        bemDTO.setDescricao( bem.getDescricao() );
         bemDTO.setNumeroSerie( bem.getNumeroSerie() );
-        bemDTO.setObservacoes( bem.getObservacoes() );
-        bemDTO.setStatus( bem.getStatus() );
-        bemDTO.setTaxaDepreciacao( bem.getTaxaDepreciacao() );
+        bemDTO.setDataAquisicao( bem.getDataAquisicao() );
         bemDTO.setValorAquisicao( bem.getValorAquisicao() );
         bemDTO.setValorAtual( bem.getValorAtual() );
+        bemDTO.setStatus( bem.getStatus() );
+        bemDTO.setCondicao( bem.getCondicao() );
+        bemDTO.setObservacoes( bem.getObservacoes() );
+        bemDTO.setFornecedor( bem.getFornecedor() );
+        bemDTO.setGarantiaAte( bem.getGarantiaAte() );
+        bemDTO.setDataUltimaManutencao( bem.getDataUltimaManutencao() );
+        bemDTO.setDataProximaManutencao( bem.getDataProximaManutencao() );
+        bemDTO.setFabricante( bem.getFabricante() );
+        bemDTO.setModelo( bem.getModelo() );
+        bemDTO.setAnoFabricacao( bem.getAnoFabricacao() );
+        bemDTO.setCentroCusto( bem.getCentroCusto() );
         bemDTO.setVidaUtilAnos( bem.getVidaUtilAnos() );
+        bemDTO.setTaxaDepreciacao( bem.getTaxaDepreciacao() );
 
         return bemDTO;
     }
@@ -82,25 +82,25 @@ public class PatrimonioMapperImpl implements PatrimonioMapper {
         Bem bem = new Bem();
 
         bem.setId( bemDTO.getId() );
-        bem.setAnoFabricacao( bemDTO.getAnoFabricacao() );
-        bem.setCentroCusto( bemDTO.getCentroCusto() );
-        bem.setCondicao( bemDTO.getCondicao() );
-        bem.setDataAquisicao( bemDTO.getDataAquisicao() );
-        bem.setDataProximaManutencao( bemDTO.getDataProximaManutencao() );
-        bem.setDataUltimaManutencao( bemDTO.getDataUltimaManutencao() );
-        bem.setDescricao( bemDTO.getDescricao() );
-        bem.setFabricante( bemDTO.getFabricante() );
-        bem.setFornecedor( bemDTO.getFornecedor() );
-        bem.setGarantiaAte( bemDTO.getGarantiaAte() );
-        bem.setModelo( bemDTO.getModelo() );
         bem.setNome( bemDTO.getNome() );
-        bem.setNumeroSerie( bemDTO.getNumeroSerie() );
+        bem.setDescricao( bemDTO.getDescricao() );
         bem.setObservacoes( bemDTO.getObservacoes() );
         bem.setStatus( bemDTO.getStatus() );
-        bem.setTaxaDepreciacao( bemDTO.getTaxaDepreciacao() );
+        bem.setCondicao( bemDTO.getCondicao() );
+        bem.setDataAquisicao( bemDTO.getDataAquisicao() );
         bem.setValorAquisicao( bemDTO.getValorAquisicao() );
         bem.setValorAtual( bemDTO.getValorAtual() );
+        bem.setModelo( bemDTO.getModelo() );
+        bem.setNumeroSerie( bemDTO.getNumeroSerie() );
+        bem.setFornecedor( bemDTO.getFornecedor() );
+        bem.setFabricante( bemDTO.getFabricante() );
+        bem.setAnoFabricacao( bemDTO.getAnoFabricacao() );
+        bem.setGarantiaAte( bemDTO.getGarantiaAte() );
+        bem.setCentroCusto( bemDTO.getCentroCusto() );
         bem.setVidaUtilAnos( bemDTO.getVidaUtilAnos() );
+        bem.setTaxaDepreciacao( bemDTO.getTaxaDepreciacao() );
+        bem.setDataUltimaManutencao( bemDTO.getDataUltimaManutencao() );
+        bem.setDataProximaManutencao( bemDTO.getDataProximaManutencao() );
 
         return bem;
     }
@@ -127,11 +127,11 @@ public class PatrimonioMapperImpl implements PatrimonioMapper {
 
         CategoriaDTO categoriaDTO = new CategoriaDTO();
 
-        categoriaDTO.setDataAtualizacao( categoria.getDataAtualizacao() );
-        categoriaDTO.setDataCriacao( categoria.getDataCriacao() );
-        categoriaDTO.setDescricao( categoria.getDescricao() );
         categoriaDTO.setId( categoria.getId() );
         categoriaDTO.setNome( categoria.getNome() );
+        categoriaDTO.setDescricao( categoria.getDescricao() );
+        categoriaDTO.setDataCriacao( categoria.getDataCriacao() );
+        categoriaDTO.setDataAtualizacao( categoria.getDataAtualizacao() );
 
         return categoriaDTO;
     }
@@ -144,11 +144,11 @@ public class PatrimonioMapperImpl implements PatrimonioMapper {
 
         Categoria categoria = new Categoria();
 
-        categoria.setDataAtualizacao( categoriaDTO.getDataAtualizacao() );
-        categoria.setDataCriacao( categoriaDTO.getDataCriacao() );
         categoria.setId( categoriaDTO.getId() );
-        categoria.setDescricao( categoriaDTO.getDescricao() );
+        categoria.setDataCriacao( categoriaDTO.getDataCriacao() );
+        categoria.setDataAtualizacao( categoriaDTO.getDataAtualizacao() );
         categoria.setNome( categoriaDTO.getNome() );
+        categoria.setDescricao( categoriaDTO.getDescricao() );
 
         return categoria;
     }
@@ -175,14 +175,14 @@ public class PatrimonioMapperImpl implements PatrimonioMapper {
 
         LocalizacaoDTO localizacaoDTO = new LocalizacaoDTO();
 
-        localizacaoDTO.setContato( localizacao.getContato() );
-        localizacaoDTO.setDataAtualizacao( localizacao.getDataAtualizacao() );
-        localizacaoDTO.setDataCriacao( localizacao.getDataCriacao() );
-        localizacaoDTO.setDescricao( localizacao.getDescricao() );
-        localizacaoDTO.setEndereco( localizacao.getEndereco() );
         localizacaoDTO.setId( localizacao.getId() );
         localizacaoDTO.setNome( localizacao.getNome() );
+        localizacaoDTO.setEndereco( localizacao.getEndereco() );
         localizacaoDTO.setResponsavel( localizacao.getResponsavel() );
+        localizacaoDTO.setContato( localizacao.getContato() );
+        localizacaoDTO.setDescricao( localizacao.getDescricao() );
+        localizacaoDTO.setDataCriacao( localizacao.getDataCriacao() );
+        localizacaoDTO.setDataAtualizacao( localizacao.getDataAtualizacao() );
 
         return localizacaoDTO;
     }
@@ -195,14 +195,14 @@ public class PatrimonioMapperImpl implements PatrimonioMapper {
 
         Localizacao localizacao = new Localizacao();
 
-        localizacao.setDataAtualizacao( localizacaoDTO.getDataAtualizacao() );
-        localizacao.setDataCriacao( localizacaoDTO.getDataCriacao() );
         localizacao.setId( localizacaoDTO.getId() );
+        localizacao.setDataCriacao( localizacaoDTO.getDataCriacao() );
+        localizacao.setDataAtualizacao( localizacaoDTO.getDataAtualizacao() );
+        localizacao.setNome( localizacaoDTO.getNome() );
+        localizacao.setEndereco( localizacaoDTO.getEndereco() );
+        localizacao.setResponsavel( localizacaoDTO.getResponsavel() );
         localizacao.setContato( localizacaoDTO.getContato() );
         localizacao.setDescricao( localizacaoDTO.getDescricao() );
-        localizacao.setEndereco( localizacaoDTO.getEndereco() );
-        localizacao.setNome( localizacaoDTO.getNome() );
-        localizacao.setResponsavel( localizacaoDTO.getResponsavel() );
 
         return localizacao;
     }
@@ -235,13 +235,13 @@ public class PatrimonioMapperImpl implements PatrimonioMapper {
         movimentacaoDTO.setLocalizacaoOrigemNome( movimentacaoLocalizacaoOrigemNome( movimentacao ) );
         movimentacaoDTO.setLocalizacaoDestinoId( movimentacaoLocalizacaoDestinoId( movimentacao ) );
         movimentacaoDTO.setLocalizacaoDestinoNome( movimentacaoLocalizacaoDestinoNome( movimentacao ) );
-        movimentacaoDTO.setDataAtualizacao( movimentacao.getDataAtualizacao() );
-        movimentacaoDTO.setDataCriacao( movimentacao.getDataCriacao() );
-        movimentacaoDTO.setDataMovimentacao( movimentacao.getDataMovimentacao() );
         movimentacaoDTO.setId( movimentacao.getId() );
-        movimentacaoDTO.setObservacoes( movimentacao.getObservacoes() );
-        movimentacaoDTO.setResponsavelMovimentacao( movimentacao.getResponsavelMovimentacao() );
+        movimentacaoDTO.setDataMovimentacao( movimentacao.getDataMovimentacao() );
         movimentacaoDTO.setTipoMovimentacao( movimentacao.getTipoMovimentacao() );
+        movimentacaoDTO.setResponsavelMovimentacao( movimentacao.getResponsavelMovimentacao() );
+        movimentacaoDTO.setObservacoes( movimentacao.getObservacoes() );
+        movimentacaoDTO.setDataCriacao( movimentacao.getDataCriacao() );
+        movimentacaoDTO.setDataAtualizacao( movimentacao.getDataAtualizacao() );
 
         return movimentacaoDTO;
     }
@@ -254,13 +254,13 @@ public class PatrimonioMapperImpl implements PatrimonioMapper {
 
         Movimentacao movimentacao = new Movimentacao();
 
-        movimentacao.setDataAtualizacao( movimentacaoDTO.getDataAtualizacao() );
-        movimentacao.setDataCriacao( movimentacaoDTO.getDataCriacao() );
         movimentacao.setId( movimentacaoDTO.getId() );
+        movimentacao.setDataCriacao( movimentacaoDTO.getDataCriacao() );
+        movimentacao.setDataAtualizacao( movimentacaoDTO.getDataAtualizacao() );
         movimentacao.setDataMovimentacao( movimentacaoDTO.getDataMovimentacao() );
-        movimentacao.setObservacoes( movimentacaoDTO.getObservacoes() );
-        movimentacao.setResponsavelMovimentacao( movimentacaoDTO.getResponsavelMovimentacao() );
         movimentacao.setTipoMovimentacao( movimentacaoDTO.getTipoMovimentacao() );
+        movimentacao.setResponsavelMovimentacao( movimentacaoDTO.getResponsavelMovimentacao() );
+        movimentacao.setObservacoes( movimentacaoDTO.getObservacoes() );
 
         return movimentacao;
     }
@@ -287,15 +287,15 @@ public class PatrimonioMapperImpl implements PatrimonioMapper {
 
         InventarioDTO inventarioDTO = new InventarioDTO();
 
-        inventarioDTO.setDataAtualizacao( inventario.getDataAtualizacao() );
-        inventarioDTO.setDataCriacao( inventario.getDataCriacao() );
-        inventarioDTO.setDataFim( inventario.getDataFim() );
-        inventarioDTO.setDataInicio( inventario.getDataInicio() );
         inventarioDTO.setId( inventario.getId() );
         inventarioDTO.setNome( inventario.getNome() );
-        inventarioDTO.setObservacoes( inventario.getObservacoes() );
+        inventarioDTO.setDataInicio( inventario.getDataInicio() );
+        inventarioDTO.setDataFim( inventario.getDataFim() );
         inventarioDTO.setResponsavel( inventario.getResponsavel() );
         inventarioDTO.setStatus( inventario.getStatus() );
+        inventarioDTO.setObservacoes( inventario.getObservacoes() );
+        inventarioDTO.setDataCriacao( inventario.getDataCriacao() );
+        inventarioDTO.setDataAtualizacao( inventario.getDataAtualizacao() );
 
         return inventarioDTO;
     }
@@ -308,15 +308,15 @@ public class PatrimonioMapperImpl implements PatrimonioMapper {
 
         Inventario inventario = new Inventario();
 
-        inventario.setDataAtualizacao( inventarioDTO.getDataAtualizacao() );
-        inventario.setDataCriacao( inventarioDTO.getDataCriacao() );
         inventario.setId( inventarioDTO.getId() );
-        inventario.setDataFim( inventarioDTO.getDataFim() );
-        inventario.setDataInicio( inventarioDTO.getDataInicio() );
+        inventario.setDataCriacao( inventarioDTO.getDataCriacao() );
+        inventario.setDataAtualizacao( inventarioDTO.getDataAtualizacao() );
         inventario.setNome( inventarioDTO.getNome() );
-        inventario.setObservacoes( inventarioDTO.getObservacoes() );
+        inventario.setDataInicio( inventarioDTO.getDataInicio() );
+        inventario.setDataFim( inventarioDTO.getDataFim() );
         inventario.setResponsavel( inventarioDTO.getResponsavel() );
         inventario.setStatus( inventarioDTO.getStatus() );
+        inventario.setObservacoes( inventarioDTO.getObservacoes() );
 
         return inventario;
     }
@@ -345,22 +345,22 @@ public class PatrimonioMapperImpl implements PatrimonioMapper {
 
         manutencaoDTO.setBemId( manutencaoBemId( manutencao ) );
         manutencaoDTO.setBemNome( manutencaoBemDescricao( manutencao ) );
-        manutencaoDTO.setCausaRaiz( manutencao.getCausaRaiz() );
-        manutencaoDTO.setCusto( manutencao.getCusto() );
-        manutencaoDTO.setDataAgendamento( manutencao.getDataAgendamento() );
-        manutencaoDTO.setDataFim( manutencao.getDataFim() );
-        manutencaoDTO.setDataInicio( manutencao.getDataInicio() );
-        manutencaoDTO.setDescricao( manutencao.getDescricao() );
-        manutencaoDTO.setFornecedor( manutencao.getFornecedor() );
         manutencaoDTO.setId( manutencao.getId() );
-        manutencaoDTO.setObservacoes( manutencao.getObservacoes() );
-        manutencaoDTO.setPrioridade( manutencao.getPrioridade() );
-        manutencaoDTO.setRecomendacoes( manutencao.getRecomendacoes() );
-        manutencaoDTO.setResponsavel( manutencao.getResponsavel() );
-        manutencaoDTO.setSolucaoAplicada( manutencao.getSolucaoAplicada() );
-        manutencaoDTO.setStatus( manutencao.getStatus() );
-        manutencaoDTO.setTempoEstimadoHoras( manutencao.getTempoEstimadoHoras() );
         manutencaoDTO.setTipoManutencao( manutencao.getTipoManutencao() );
+        manutencaoDTO.setDescricao( manutencao.getDescricao() );
+        manutencaoDTO.setDataInicio( manutencao.getDataInicio() );
+        manutencaoDTO.setDataFim( manutencao.getDataFim() );
+        manutencaoDTO.setCusto( manutencao.getCusto() );
+        manutencaoDTO.setFornecedor( manutencao.getFornecedor() );
+        manutencaoDTO.setResponsavel( manutencao.getResponsavel() );
+        manutencaoDTO.setStatus( manutencao.getStatus() );
+        manutencaoDTO.setObservacoes( manutencao.getObservacoes() );
+        manutencaoDTO.setDataAgendamento( manutencao.getDataAgendamento() );
+        manutencaoDTO.setPrioridade( manutencao.getPrioridade() );
+        manutencaoDTO.setTempoEstimadoHoras( manutencao.getTempoEstimadoHoras() );
+        manutencaoDTO.setCausaRaiz( manutencao.getCausaRaiz() );
+        manutencaoDTO.setSolucaoAplicada( manutencao.getSolucaoAplicada() );
+        manutencaoDTO.setRecomendacoes( manutencao.getRecomendacoes() );
 
         return manutencaoDTO;
     }
@@ -374,21 +374,21 @@ public class PatrimonioMapperImpl implements PatrimonioMapper {
         Manutencao manutencao = new Manutencao();
 
         manutencao.setId( manutencaoDTO.getId() );
-        manutencao.setCausaRaiz( manutencaoDTO.getCausaRaiz() );
-        manutencao.setCusto( manutencaoDTO.getCusto() );
-        manutencao.setDataAgendamento( manutencaoDTO.getDataAgendamento() );
-        manutencao.setDataFim( manutencaoDTO.getDataFim() );
-        manutencao.setDataInicio( manutencaoDTO.getDataInicio() );
-        manutencao.setDescricao( manutencaoDTO.getDescricao() );
-        manutencao.setFornecedor( manutencaoDTO.getFornecedor() );
-        manutencao.setObservacoes( manutencaoDTO.getObservacoes() );
-        manutencao.setPrioridade( manutencaoDTO.getPrioridade() );
-        manutencao.setRecomendacoes( manutencaoDTO.getRecomendacoes() );
-        manutencao.setResponsavel( manutencaoDTO.getResponsavel() );
-        manutencao.setSolucaoAplicada( manutencaoDTO.getSolucaoAplicada() );
-        manutencao.setStatus( manutencaoDTO.getStatus() );
-        manutencao.setTempoEstimadoHoras( manutencaoDTO.getTempoEstimadoHoras() );
         manutencao.setTipoManutencao( manutencaoDTO.getTipoManutencao() );
+        manutencao.setDescricao( manutencaoDTO.getDescricao() );
+        manutencao.setDataInicio( manutencaoDTO.getDataInicio() );
+        manutencao.setDataFim( manutencaoDTO.getDataFim() );
+        manutencao.setCusto( manutencaoDTO.getCusto() );
+        manutencao.setFornecedor( manutencaoDTO.getFornecedor() );
+        manutencao.setResponsavel( manutencaoDTO.getResponsavel() );
+        manutencao.setStatus( manutencaoDTO.getStatus() );
+        manutencao.setObservacoes( manutencaoDTO.getObservacoes() );
+        manutencao.setDataAgendamento( manutencaoDTO.getDataAgendamento() );
+        manutencao.setPrioridade( manutencaoDTO.getPrioridade() );
+        manutencao.setTempoEstimadoHoras( manutencaoDTO.getTempoEstimadoHoras() );
+        manutencao.setCausaRaiz( manutencaoDTO.getCausaRaiz() );
+        manutencao.setSolucaoAplicada( manutencaoDTO.getSolucaoAplicada() );
+        manutencao.setRecomendacoes( manutencaoDTO.getRecomendacoes() );
 
         return manutencao;
     }
@@ -417,24 +417,24 @@ public class PatrimonioMapperImpl implements PatrimonioMapper {
 
         baixaDTO.setBemId( baixaBemId( baixa ) );
         baixaDTO.setBemNome( baixaBemDescricao( baixa ) );
-        baixaDTO.setAprovadoPor( baixa.getAprovadoPor() );
-        baixaDTO.setComprador( baixa.getComprador() );
-        baixaDTO.setDataAprovacao( baixa.getDataAprovacao() );
-        baixaDTO.setDataBaixa( baixa.getDataBaixa() );
-        baixaDTO.setDataVenda( baixa.getDataVenda() );
-        baixaDTO.setDescricao( baixa.getDescricao() );
-        baixaDTO.setDestinoFinal( baixa.getDestinoFinal() );
-        baixaDTO.setDocumentacaoAnexada( baixa.getDocumentacaoAnexada() );
-        baixaDTO.setGanhoFinanceiro( baixa.getGanhoFinanceiro() );
         baixaDTO.setId( baixa.getId() );
-        baixaDTO.setJustificativaTecnica( baixa.getJustificativaTecnica() );
         baixaDTO.setMotivo( baixa.getMotivo() );
-        baixaDTO.setObservacoes( baixa.getObservacoes() );
-        baixaDTO.setPerdaFinanceira( baixa.getPerdaFinanceira() );
+        baixaDTO.setDescricao( baixa.getDescricao() );
+        baixaDTO.setDataBaixa( baixa.getDataBaixa() );
+        baixaDTO.setValorResidual( baixa.getValorResidual() );
         baixaDTO.setProcessoAdministrativo( baixa.getProcessoAdministrativo() );
         baixaDTO.setResponsavel( baixa.getResponsavel() );
-        baixaDTO.setValorResidual( baixa.getValorResidual() );
+        baixaDTO.setObservacoes( baixa.getObservacoes() );
+        baixaDTO.setDataAprovacao( baixa.getDataAprovacao() );
+        baixaDTO.setAprovadoPor( baixa.getAprovadoPor() );
+        baixaDTO.setJustificativaTecnica( baixa.getJustificativaTecnica() );
+        baixaDTO.setDocumentacaoAnexada( baixa.getDocumentacaoAnexada() );
+        baixaDTO.setDestinoFinal( baixa.getDestinoFinal() );
         baixaDTO.setValorVenda( baixa.getValorVenda() );
+        baixaDTO.setDataVenda( baixa.getDataVenda() );
+        baixaDTO.setComprador( baixa.getComprador() );
+        baixaDTO.setPerdaFinanceira( baixa.getPerdaFinanceira() );
+        baixaDTO.setGanhoFinanceiro( baixa.getGanhoFinanceiro() );
 
         return baixaDTO;
     }
@@ -448,21 +448,21 @@ public class PatrimonioMapperImpl implements PatrimonioMapper {
         Baixa baixa = new Baixa();
 
         baixa.setId( baixaDTO.getId() );
-        baixa.setAprovadoPor( baixaDTO.getAprovadoPor() );
-        baixa.setComprador( baixaDTO.getComprador() );
-        baixa.setDataAprovacao( baixaDTO.getDataAprovacao() );
-        baixa.setDataBaixa( baixaDTO.getDataBaixa() );
-        baixa.setDataVenda( baixaDTO.getDataVenda() );
-        baixa.setDescricao( baixaDTO.getDescricao() );
-        baixa.setDestinoFinal( baixaDTO.getDestinoFinal() );
-        baixa.setDocumentacaoAnexada( baixaDTO.getDocumentacaoAnexada() );
-        baixa.setJustificativaTecnica( baixaDTO.getJustificativaTecnica() );
         baixa.setMotivo( baixaDTO.getMotivo() );
-        baixa.setObservacoes( baixaDTO.getObservacoes() );
+        baixa.setDescricao( baixaDTO.getDescricao() );
+        baixa.setDataBaixa( baixaDTO.getDataBaixa() );
+        baixa.setValorResidual( baixaDTO.getValorResidual() );
         baixa.setProcessoAdministrativo( baixaDTO.getProcessoAdministrativo() );
         baixa.setResponsavel( baixaDTO.getResponsavel() );
-        baixa.setValorResidual( baixaDTO.getValorResidual() );
+        baixa.setObservacoes( baixaDTO.getObservacoes() );
+        baixa.setDataAprovacao( baixaDTO.getDataAprovacao() );
+        baixa.setAprovadoPor( baixaDTO.getAprovadoPor() );
+        baixa.setJustificativaTecnica( baixaDTO.getJustificativaTecnica() );
+        baixa.setDocumentacaoAnexada( baixaDTO.getDocumentacaoAnexada() );
+        baixa.setDestinoFinal( baixaDTO.getDestinoFinal() );
         baixa.setValorVenda( baixaDTO.getValorVenda() );
+        baixa.setDataVenda( baixaDTO.getDataVenda() );
+        baixa.setComprador( baixaDTO.getComprador() );
 
         return baixa;
     }
@@ -489,28 +489,28 @@ public class PatrimonioMapperImpl implements PatrimonioMapper {
 
         UsuarioDTO usuarioDTO = new UsuarioDTO();
 
-        usuarioDTO.setAtivo( usuario.getAtivo() );
-        usuarioDTO.setBloqueado( usuario.isBloqueado() );
-        usuarioDTO.setCargo( usuario.getCargo() );
-        usuarioDTO.setCep( usuario.getCep() );
-        usuarioDTO.setCidade( usuario.getCidade() );
-        usuarioDTO.setCpf( usuario.getCpf() );
-        usuarioDTO.setDataBloqueio( usuario.getDataBloqueio() );
-        usuarioDTO.setDataExpiracaoSenha( usuario.getDataExpiracaoSenha() );
-        usuarioDTO.setDataNascimento( usuario.getDataNascimento() );
-        usuarioDTO.setDataUltimoLogin( usuario.getDataUltimoLogin() );
-        usuarioDTO.setDepartamento( usuario.getDepartamento() );
-        usuarioDTO.setEmail( usuario.getEmail() );
-        usuarioDTO.setEndereco( usuario.getEndereco() );
-        usuarioDTO.setEstado( usuario.getEstado() );
         usuarioDTO.setId( usuario.getId() );
-        usuarioDTO.setMatricula( usuario.getMatricula() );
-        usuarioDTO.setNomeCompleto( usuario.getNomeCompleto() );
-        usuarioDTO.setPais( usuario.getPais() );
-        usuarioDTO.setSenhaExpirada( usuario.isSenhaExpirada() );
-        usuarioDTO.setTelefone( usuario.getTelefone() );
-        usuarioDTO.setTentativasLoginFalha( usuario.getTentativasLoginFalha() );
         usuarioDTO.setUsername( usuario.getUsername() );
+        usuarioDTO.setEmail( usuario.getEmail() );
+        usuarioDTO.setNomeCompleto( usuario.getNomeCompleto() );
+        usuarioDTO.setAtivo( usuario.getAtivo() );
+        usuarioDTO.setDataUltimoLogin( usuario.getDataUltimoLogin() );
+        usuarioDTO.setDataExpiracaoSenha( usuario.getDataExpiracaoSenha() );
+        usuarioDTO.setTentativasLoginFalha( usuario.getTentativasLoginFalha() );
+        usuarioDTO.setDataBloqueio( usuario.getDataBloqueio() );
+        usuarioDTO.setTelefone( usuario.getTelefone() );
+        usuarioDTO.setDepartamento( usuario.getDepartamento() );
+        usuarioDTO.setCargo( usuario.getCargo() );
+        usuarioDTO.setMatricula( usuario.getMatricula() );
+        usuarioDTO.setCpf( usuario.getCpf() );
+        usuarioDTO.setDataNascimento( usuario.getDataNascimento() );
+        usuarioDTO.setEndereco( usuario.getEndereco() );
+        usuarioDTO.setCidade( usuario.getCidade() );
+        usuarioDTO.setEstado( usuario.getEstado() );
+        usuarioDTO.setCep( usuario.getCep() );
+        usuarioDTO.setPais( usuario.getPais() );
+        usuarioDTO.setBloqueado( usuario.isBloqueado() );
+        usuarioDTO.setSenhaExpirada( usuario.isSenhaExpirada() );
 
         return usuarioDTO;
     }
@@ -524,24 +524,24 @@ public class PatrimonioMapperImpl implements PatrimonioMapper {
         Usuario usuario = new Usuario();
 
         usuario.setId( usuarioDTO.getId() );
-        usuario.setAtivo( usuarioDTO.getAtivo() );
-        usuario.setCargo( usuarioDTO.getCargo() );
-        usuario.setCep( usuarioDTO.getCep() );
-        usuario.setCpf( usuarioDTO.getCpf() );
-        usuario.setDataBloqueio( usuarioDTO.getDataBloqueio() );
-        usuario.setDataExpiracaoSenha( usuarioDTO.getDataExpiracaoSenha() );
-        usuario.setDataNascimento( usuarioDTO.getDataNascimento() );
-        usuario.setDataUltimoLogin( usuarioDTO.getDataUltimoLogin() );
-        usuario.setDepartamento( usuarioDTO.getDepartamento() );
+        usuario.setUsername( usuarioDTO.getUsername() );
         usuario.setEmail( usuarioDTO.getEmail() );
+        usuario.setNomeCompleto( usuarioDTO.getNomeCompleto() );
+        usuario.setAtivo( usuarioDTO.getAtivo() );
+        usuario.setDataUltimoLogin( usuarioDTO.getDataUltimoLogin() );
+        usuario.setDataExpiracaoSenha( usuarioDTO.getDataExpiracaoSenha() );
+        usuario.setTentativasLoginFalha( usuarioDTO.getTentativasLoginFalha() );
+        usuario.setDataBloqueio( usuarioDTO.getDataBloqueio() );
+        usuario.setTelefone( usuarioDTO.getTelefone() );
+        usuario.setDepartamento( usuarioDTO.getDepartamento() );
+        usuario.setCargo( usuarioDTO.getCargo() );
+        usuario.setMatricula( usuarioDTO.getMatricula() );
+        usuario.setCpf( usuarioDTO.getCpf() );
+        usuario.setDataNascimento( usuarioDTO.getDataNascimento() );
         usuario.setEndereco( usuarioDTO.getEndereco() );
         usuario.setEstado( usuarioDTO.getEstado() );
-        usuario.setMatricula( usuarioDTO.getMatricula() );
-        usuario.setNomeCompleto( usuarioDTO.getNomeCompleto() );
+        usuario.setCep( usuarioDTO.getCep() );
         usuario.setPais( usuarioDTO.getPais() );
-        usuario.setTelefone( usuarioDTO.getTelefone() );
-        usuario.setTentativasLoginFalha( usuarioDTO.getTentativasLoginFalha() );
-        usuario.setUsername( usuarioDTO.getUsername() );
 
         return usuario;
     }
@@ -568,11 +568,11 @@ public class PatrimonioMapperImpl implements PatrimonioMapper {
 
         PerfilDTO perfilDTO = new PerfilDTO();
 
-        perfilDTO.setAtivo( perfil.getAtivo() );
-        perfilDTO.setDescricao( perfil.getDescricao() );
         perfilDTO.setId( perfil.getId() );
-        perfilDTO.setNivelAcesso( perfil.getNivelAcesso() );
         perfilDTO.setNome( perfil.getNome() );
+        perfilDTO.setDescricao( perfil.getDescricao() );
+        perfilDTO.setAtivo( perfil.getAtivo() );
+        perfilDTO.setNivelAcesso( perfil.getNivelAcesso() );
         List<String> list = perfil.getPermissoes();
         if ( list != null ) {
             perfilDTO.setPermissoes( new ArrayList<String>( list ) );
@@ -590,10 +590,10 @@ public class PatrimonioMapperImpl implements PatrimonioMapper {
         Perfil perfil = new Perfil();
 
         perfil.setId( perfilDTO.getId() );
-        perfil.setAtivo( perfilDTO.getAtivo() );
-        perfil.setDescricao( perfilDTO.getDescricao() );
-        perfil.setNivelAcesso( perfilDTO.getNivelAcesso() );
         perfil.setNome( perfilDTO.getNome() );
+        perfil.setDescricao( perfilDTO.getDescricao() );
+        perfil.setAtivo( perfilDTO.getAtivo() );
+        perfil.setNivelAcesso( perfilDTO.getNivelAcesso() );
         List<String> list = perfilDTO.getPermissoes();
         if ( list != null ) {
             perfil.setPermissoes( new ArrayList<String>( list ) );
@@ -626,25 +626,25 @@ public class PatrimonioMapperImpl implements PatrimonioMapper {
 
         notificacaoDTO.setUsuarioId( notificacaoUsuarioId( notificacao ) );
         notificacaoDTO.setUsuarioNome( notificacaoUsuarioNomeCompleto( notificacao ) );
-        notificacaoDTO.setAcaoRequerida( notificacao.getAcaoRequerida() );
-        notificacaoDTO.setCategoria( notificacao.getCategoria() );
+        notificacaoDTO.setId( notificacao.getId() );
+        notificacaoDTO.setTitulo( notificacao.getTitulo() );
+        notificacaoDTO.setMensagem( notificacao.getMensagem() );
+        notificacaoDTO.setTipo( notificacao.getTipo() );
+        notificacaoDTO.setLida( notificacao.getLida() );
         notificacaoDTO.setDataEnvio( notificacao.getDataEnvio() );
         notificacaoDTO.setDataLeitura( notificacao.getDataLeitura() );
-        notificacaoDTO.setDataUltimaTentativa( notificacao.getDataUltimaTentativa() );
+        notificacaoDTO.setPrioridade( notificacao.getPrioridade() );
+        notificacaoDTO.setCategoria( notificacao.getCategoria() );
         notificacaoDTO.setEntidadeRelacionada( notificacao.getEntidadeRelacionada() );
+        notificacaoDTO.setIdEntidadeRelacionada( notificacao.getIdEntidadeRelacionada() );
+        notificacaoDTO.setAcaoRequerida( notificacao.getAcaoRequerida() );
+        notificacaoDTO.setUrlAcao( notificacao.getUrlAcao() );
         notificacaoDTO.setEnviadaPorEmail( notificacao.getEnviadaPorEmail() );
         notificacaoDTO.setEnviadaPorPush( notificacao.getEnviadaPorPush() );
         notificacaoDTO.setEnviadaPorSms( notificacao.getEnviadaPorSms() );
-        notificacaoDTO.setErroEnvio( notificacao.getErroEnvio() );
-        notificacaoDTO.setId( notificacao.getId() );
-        notificacaoDTO.setIdEntidadeRelacionada( notificacao.getIdEntidadeRelacionada() );
-        notificacaoDTO.setLida( notificacao.getLida() );
-        notificacaoDTO.setMensagem( notificacao.getMensagem() );
-        notificacaoDTO.setPrioridade( notificacao.getPrioridade() );
         notificacaoDTO.setTentativasEnvio( notificacao.getTentativasEnvio() );
-        notificacaoDTO.setTipo( notificacao.getTipo() );
-        notificacaoDTO.setTitulo( notificacao.getTitulo() );
-        notificacaoDTO.setUrlAcao( notificacao.getUrlAcao() );
+        notificacaoDTO.setDataUltimaTentativa( notificacao.getDataUltimaTentativa() );
+        notificacaoDTO.setErroEnvio( notificacao.getErroEnvio() );
 
         return notificacaoDTO;
     }
@@ -658,24 +658,24 @@ public class PatrimonioMapperImpl implements PatrimonioMapper {
         Notificacao notificacao = new Notificacao();
 
         notificacao.setId( notificacaoDTO.getId() );
-        notificacao.setAcaoRequerida( notificacaoDTO.getAcaoRequerida() );
-        notificacao.setCategoria( notificacaoDTO.getCategoria() );
+        notificacao.setTitulo( notificacaoDTO.getTitulo() );
+        notificacao.setMensagem( notificacaoDTO.getMensagem() );
+        notificacao.setTipo( notificacaoDTO.getTipo() );
+        notificacao.setLida( notificacaoDTO.getLida() );
         notificacao.setDataEnvio( notificacaoDTO.getDataEnvio() );
         notificacao.setDataLeitura( notificacaoDTO.getDataLeitura() );
-        notificacao.setDataUltimaTentativa( notificacaoDTO.getDataUltimaTentativa() );
+        notificacao.setPrioridade( notificacaoDTO.getPrioridade() );
+        notificacao.setCategoria( notificacaoDTO.getCategoria() );
         notificacao.setEntidadeRelacionada( notificacaoDTO.getEntidadeRelacionada() );
+        notificacao.setIdEntidadeRelacionada( notificacaoDTO.getIdEntidadeRelacionada() );
+        notificacao.setAcaoRequerida( notificacaoDTO.getAcaoRequerida() );
+        notificacao.setUrlAcao( notificacaoDTO.getUrlAcao() );
         notificacao.setEnviadaPorEmail( notificacaoDTO.getEnviadaPorEmail() );
         notificacao.setEnviadaPorPush( notificacaoDTO.getEnviadaPorPush() );
         notificacao.setEnviadaPorSms( notificacaoDTO.getEnviadaPorSms() );
-        notificacao.setErroEnvio( notificacaoDTO.getErroEnvio() );
-        notificacao.setIdEntidadeRelacionada( notificacaoDTO.getIdEntidadeRelacionada() );
-        notificacao.setLida( notificacaoDTO.getLida() );
-        notificacao.setMensagem( notificacaoDTO.getMensagem() );
-        notificacao.setPrioridade( notificacaoDTO.getPrioridade() );
         notificacao.setTentativasEnvio( notificacaoDTO.getTentativasEnvio() );
-        notificacao.setTipo( notificacaoDTO.getTipo() );
-        notificacao.setTitulo( notificacaoDTO.getTitulo() );
-        notificacao.setUrlAcao( notificacaoDTO.getUrlAcao() );
+        notificacao.setDataUltimaTentativa( notificacaoDTO.getDataUltimaTentativa() );
+        notificacao.setErroEnvio( notificacaoDTO.getErroEnvio() );
 
         return notificacao;
     }
@@ -702,14 +702,14 @@ public class PatrimonioMapperImpl implements PatrimonioMapper {
 
         ConfiguracaoDTO configuracaoDTO = new ConfiguracaoDTO();
 
-        configuracaoDTO.setChave( configuracao.getChave() );
-        configuracaoDTO.setDataAtualizacao( configuracao.getDataAtualizacao() );
-        configuracaoDTO.setDataCriacao( configuracao.getDataCriacao() );
-        configuracaoDTO.setDescricao( configuracao.getDescricao() );
-        configuracaoDTO.setEditavel( configuracao.getEditavel() );
         configuracaoDTO.setId( configuracao.getId() );
-        configuracaoDTO.setTipo( configuracao.getTipo() );
+        configuracaoDTO.setChave( configuracao.getChave() );
         configuracaoDTO.setValor( configuracao.getValor() );
+        configuracaoDTO.setDescricao( configuracao.getDescricao() );
+        configuracaoDTO.setTipo( configuracao.getTipo() );
+        configuracaoDTO.setEditavel( configuracao.getEditavel() );
+        configuracaoDTO.setDataCriacao( configuracao.getDataCriacao() );
+        configuracaoDTO.setDataAtualizacao( configuracao.getDataAtualizacao() );
         configuracaoDTO.setVersao( configuracao.getVersao() );
 
         return configuracaoDTO;
@@ -723,15 +723,15 @@ public class PatrimonioMapperImpl implements PatrimonioMapper {
 
         Configuracao configuracao = new Configuracao();
 
-        configuracao.setDataAtualizacao( configuracaoDTO.getDataAtualizacao() );
-        configuracao.setDataCriacao( configuracaoDTO.getDataCriacao() );
         configuracao.setId( configuracaoDTO.getId() );
+        configuracao.setDataCriacao( configuracaoDTO.getDataCriacao() );
+        configuracao.setDataAtualizacao( configuracaoDTO.getDataAtualizacao() );
         configuracao.setVersao( configuracaoDTO.getVersao() );
         configuracao.setChave( configuracaoDTO.getChave() );
-        configuracao.setDescricao( configuracaoDTO.getDescricao() );
-        configuracao.setEditavel( configuracaoDTO.getEditavel() );
-        configuracao.setTipo( configuracaoDTO.getTipo() );
         configuracao.setValor( configuracaoDTO.getValor() );
+        configuracao.setDescricao( configuracaoDTO.getDescricao() );
+        configuracao.setTipo( configuracaoDTO.getTipo() );
+        configuracao.setEditavel( configuracaoDTO.getEditavel() );
 
         return configuracao;
     }
@@ -759,15 +759,15 @@ public class PatrimonioMapperImpl implements PatrimonioMapper {
         AuditoriaDTO auditoriaDTO = new AuditoriaDTO();
 
         auditoriaDTO.setUsuarioId( auditoriaUsuarioId( auditoria ) );
+        auditoriaDTO.setId( auditoria.getId() );
+        auditoriaDTO.setEntidade( auditoria.getEntidade() );
+        auditoriaDTO.setEntidadeId( auditoria.getEntidadeId() );
         auditoriaDTO.setAcao( auditoria.getAcao() );
         auditoriaDTO.setDadosAnteriores( auditoria.getDadosAnteriores() );
         auditoriaDTO.setDadosNovos( auditoria.getDadosNovos() );
-        auditoriaDTO.setDataAcao( auditoria.getDataAcao() );
-        auditoriaDTO.setEntidade( auditoria.getEntidade() );
-        auditoriaDTO.setEntidadeId( auditoria.getEntidadeId() );
-        auditoriaDTO.setId( auditoria.getId() );
         auditoriaDTO.setIpAddress( auditoria.getIpAddress() );
         auditoriaDTO.setUserAgent( auditoria.getUserAgent() );
+        auditoriaDTO.setDataAcao( auditoria.getDataAcao() );
 
         return auditoriaDTO;
     }
@@ -781,14 +781,14 @@ public class PatrimonioMapperImpl implements PatrimonioMapper {
         Auditoria auditoria = new Auditoria();
 
         auditoria.setId( auditoriaDTO.getId() );
+        auditoria.setEntidade( auditoriaDTO.getEntidade() );
+        auditoria.setEntidadeId( auditoriaDTO.getEntidadeId() );
         auditoria.setAcao( auditoriaDTO.getAcao() );
         auditoria.setDadosAnteriores( auditoriaDTO.getDadosAnteriores() );
         auditoria.setDadosNovos( auditoriaDTO.getDadosNovos() );
-        auditoria.setDataAcao( auditoriaDTO.getDataAcao() );
-        auditoria.setEntidade( auditoriaDTO.getEntidade() );
-        auditoria.setEntidadeId( auditoriaDTO.getEntidadeId() );
         auditoria.setIpAddress( auditoriaDTO.getIpAddress() );
         auditoria.setUserAgent( auditoriaDTO.getUserAgent() );
+        auditoria.setDataAcao( auditoriaDTO.getDataAcao() );
 
         return auditoria;
     }

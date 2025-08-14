@@ -26,10 +26,10 @@ spring:
         batch_versioned_data: true
     open-in-view: false
   
-#  flyway:
-#    enabled: true
-#    baseline-on-migrate: true
-#    locations: classpath:db/migration
+  flyway:
+    enabled: true
+    baseline-on-migrate: true
+    locations: classpath:db/migration
   
   cache:
     type: redis
@@ -91,8 +91,6 @@ spring:
 # Server Configuration
 server:
   port: 8080
-  servlet:
-    context-path: /api/v1
   compression:
     enabled: true
     mime-types: text/html,text/xml,text/plain,text/css,text/javascript,application/javascript,application/json

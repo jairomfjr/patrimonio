@@ -6,3 +6,4 @@
 /home/jairo/git/patrimonio/patrimonio-api/src/test/java/com/manus/patrimonio/model/BemTest.java
 /home/jairo/git/patrimonio/patrimonio-api/src/test/java/com/manus/patrimonio/model/EntidadeBaseTest.java
 /home/jairo/git/patrimonio/patrimonio-api/src/test/java/com/manus/patrimonio/service/BemServiceTest.java
+/home/jairo/git/patrimonio/patrimonio-api/src/test/java/com/manus/patrimonio/util/PasswordGenerator.java
