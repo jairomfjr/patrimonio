@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-SistemaPatrimonioApplication<sistema-patrimonio-robusto>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.manus.patrimonio.SistemaPatrimonioApplication",
+            "projectName": "sistema-patrimonio-robusto",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

@@ -8,8 +8,10 @@
 /home/jairo/git/patrimonio/patrimonio-api/src/main/java/com/manus/patrimonio/controller/BemController.java
 /home/jairo/git/patrimonio/patrimonio-api/src/main/java/com/manus/patrimonio/controller/CategoriaController.java
 /home/jairo/git/patrimonio/patrimonio-api/src/main/java/com/manus/patrimonio/controller/ConfiguracaoController.java
+/home/jairo/git/patrimonio/patrimonio-api/src/main/java/com/manus/patrimonio/controller/InventarioController.java
 /home/jairo/git/patrimonio/patrimonio-api/src/main/java/com/manus/patrimonio/controller/LocalizacaoController.java
 /home/jairo/git/patrimonio/patrimonio-api/src/main/java/com/manus/patrimonio/controller/ManutencaoController.java
+/home/jairo/git/patrimonio/patrimonio-api/src/main/java/com/manus/patrimonio/controller/MovimentacaoController.java
 /home/jairo/git/patrimonio/patrimonio-api/src/main/java/com/manus/patrimonio/controller/NotificacaoController.java
 /home/jairo/git/patrimonio/patrimonio-api/src/main/java/com/manus/patrimonio/controller/PerfilController.java
 /home/jairo/git/patrimonio/patrimonio-api/src/main/java/com/manus/patrimonio/controller/UsuarioController.java
@@ -65,8 +67,10 @@
 /home/jairo/git/patrimonio/patrimonio-api/src/main/java/com/manus/patrimonio/service/BemService.java
 /home/jairo/git/patrimonio/patrimonio-api/src/main/java/com/manus/patrimonio/service/CategoriaService.java
 /home/jairo/git/patrimonio/patrimonio-api/src/main/java/com/manus/patrimonio/service/ConfiguracaoService.java
+/home/jairo/git/patrimonio/patrimonio-api/src/main/java/com/manus/patrimonio/service/InventarioService.java
 /home/jairo/git/patrimonio/patrimonio-api/src/main/java/com/manus/patrimonio/service/LocalizacaoService.java
 /home/jairo/git/patrimonio/patrimonio-api/src/main/java/com/manus/patrimonio/service/ManutencaoService.java
+/home/jairo/git/patrimonio/patrimonio-api/src/main/java/com/manus/patrimonio/service/MovimentacaoService.java
 /home/jairo/git/patrimonio/patrimonio-api/src/main/java/com/manus/patrimonio/service/NotificacaoService.java
 /home/jairo/git/patrimonio/patrimonio-api/src/main/java/com/manus/patrimonio/service/PerfilService.java
 /home/jairo/git/patrimonio/patrimonio-api/src/main/java/com/manus/patrimonio/service/UsuarioService.java

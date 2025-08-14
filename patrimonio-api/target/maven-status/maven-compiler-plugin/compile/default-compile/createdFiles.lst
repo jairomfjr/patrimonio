@@ -16,8 +16,10 @@ com/manus/patrimonio/dto/ConfiguracaoDTO.class
 com/manus/patrimonio/model/Usuario.class
 com/manus/patrimonio/model/EntidadeBase.class
 com/manus/patrimonio/dto/AuditoriaDTO.class
+com/manus/patrimonio/controller/InventarioController.class
 com/manus/patrimonio/dto/BaixaDTO.class
 com/manus/patrimonio/config/DadosIniciais.class
+com/manus/patrimonio/service/MovimentacaoService.class
 com/manus/patrimonio/mapper/PatrimonioMapper.class
 com/manus/patrimonio/config/CorsConfig.class
 com/manus/patrimonio/repository/ConfiguracaoRepository.class
@@ -58,6 +60,7 @@ com/manus/patrimonio/enums/TipoManutencao.class
 com/manus/patrimonio/repository/BemRepository.class
 com/manus/patrimonio/service/BaixaService.class
 com/manus/patrimonio/enums/StatusBem.class
+com/manus/patrimonio/controller/MovimentacaoController.class
 com/manus/patrimonio/model/Baixa.class
 com/manus/patrimonio/SistemaPatrimonioApplication.class
 com/manus/patrimonio/controller/BemController.class
@@ -70,6 +73,7 @@ com/manus/patrimonio/service/ManutencaoService.class
 com/manus/patrimonio/model/Localizacao.class
 com/manus/patrimonio/enums/CondicaoBem.class
 com/manus/patrimonio/config/SecurityConfig.class
+com/manus/patrimonio/service/InventarioService.class
 com/manus/patrimonio/exception/TratadorGlobalExcecoes.class
 com/manus/patrimonio/service/ConfiguracaoService.class
 com/manus/patrimonio/service/CategoriaService.class
