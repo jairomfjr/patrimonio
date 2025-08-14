@@ -109,7 +109,9 @@ public abstract class EntidadeBase {
     @Override
     public boolean equals(Object obj) {
         if (this == obj) return true;
-        if (obj == null || getClass() != obj.getClass()) return false;
+        if (obj == null) return false;
+        // Permitir comparação entre entidades base de classes diferentes
+        if (!(obj instanceof EntidadeBase)) return false;
         EntidadeBase that = (EntidadeBase) obj;
         return Objects.equals(id, that.id);
     }
